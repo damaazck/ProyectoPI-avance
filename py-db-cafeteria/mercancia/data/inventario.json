@@ -1,0 +1,238 @@
+{
+    "siguiente_id": 11,
+    "siguiente_venta": 7,
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Taza de cerámica crema",
+            "categoria": "Tazas",
+            "descripcion": "Taza artesanal de 350 ml, ideal para café latte y capuchino.",
+            "precio": 150,
+            "cantidad": 6,
+            "icono": "☕"
+        },
+        {
+            "id": 2,
+            "nombre": "Café Chiapas en grano · 250 g",
+            "categoria": "Café",
+            "descripcion": "Granos de café de tueste medio con notas de chocolate y caramelo.",
+            "precio": 225,
+            "cantidad": 6,
+            "icono": "🫘"
+        },
+        {
+            "id": 3,
+            "nombre": "Termo acero inoxidable",
+            "categoria": "Termos",
+            "descripcion": "Termo térmico de 500 ml con tapa antiderrames y acabado mate.",
+            "precio": 250,
+            "cantidad": 4,
+            "icono": "🧉"
+        },
+        {
+            "id": 4,
+            "nombre": "Peluche osito barista",
+            "categoria": "Peluches",
+            "descripcion": "Osito suave con delantal de barista, edición especial de la cafetería.",
+            "precio": 280,
+            "cantidad": 7,
+            "icono": "🧸"
+        },
+        {
+            "id": 5,
+            "nombre": "Vaso reutilizable con tapa",
+            "categoria": "Termos",
+            "descripcion": "Vaso de 450 ml para bebidas frías o calientes, ligero y reutilizable.",
+            "precio": 100,
+            "cantidad": 5,
+            "icono": "🧉"
+        },
+        {
+            "id": 6,
+            "nombre": "Café Veracruz molido · 500 g",
+            "categoria": "Café",
+            "descripcion": "Café molido de aroma intenso, perfecto para preparar en casa.",
+            "precio": 315,
+            "cantidad": 5,
+            "icono": "🫘"
+        },
+        {
+            "id": 7,
+            "nombre": "Set de posavasos de corcho",
+            "categoria": "Accesorios",
+            "descripcion": "Juego de cuatro posavasos grabados con motivos de café.",
+            "precio": 120,
+            "cantidad": 4,
+            "icono": "🛍️"
+        },
+        {
+            "id": 8,
+            "nombre": "Bolsa tote de la cafetería",
+            "categoria": "Accesorios",
+            "descripcion": "Bolsa de tela resistente con diseño original para uso diario.",
+            "precio": 120,
+            "cantidad": 12,
+            "icono": "🛍️"
+        },
+        {
+            "id": 9,
+            "nombre": "Cuchara medidora de café",
+            "categoria": "Accesorios",
+            "descripcion": "Cuchara dosificadora de acero para servir siempre la medida correcta.",
+            "precio": 60,
+            "cantidad": 35,
+            "icono": "🛍️"
+        },
+        {
+            "id": 10,
+            "nombre": "Llavero mini taza",
+            "categoria": "Accesorios",
+            "descripcion": "Pequeño llavero de taza de café, ideal como recuerdo o regalo.",
+            "precio": 80,
+            "cantidad": 43,
+            "icono": "🛍️"
+        }
+    ],
+    "ventas": [
+        {
+            "id": 1,
+            "fecha": "2026-10-27T07:12:52+01:00",
+            "items": [
+                {
+                    "id_producto": 2,
+                    "nombre": "Café Chiapas en grano · 250 g",
+                    "cantidad": 1,
+                    "precio_unitario": 225,
+                    "subtotal": 225
+                },
+                {
+                    "id_producto": 4,
+                    "nombre": "Peluche osito barista",
+                    "cantidad": 1,
+                    "precio_unitario": 280,
+                    "subtotal": 280
+                },
+                {
+                    "id_producto": 5,
+                    "nombre": "Vaso reutilizable con tapa",
+                    "cantidad": 1,
+                    "precio_unitario": 100,
+                    "subtotal": 100
+                }
+            ],
+            "total": 605
+        },
+        {
+            "id": 2,
+            "fecha": "2026-10-27T07:17:18+01:00",
+            "items": [
+                {
+                    "id_producto": 2,
+                    "nombre": "Café Chiapas en grano · 250 g",
+                    "cantidad": 1,
+                    "precio_unitario": 225,
+                    "subtotal": 225
+                },
+                {
+                    "id_producto": 1,
+                    "nombre": "Taza de cerámica crema",
+                    "cantidad": 1,
+                    "precio_unitario": 150,
+                    "subtotal": 150
+                }
+            ],
+            "total": 375
+        },
+        {
+            "id": 3,
+            "fecha": "2026-11-04T06:51:35+01:00",
+            "items": [
+                {
+                    "id_producto": 10,
+                    "nombre": "Llavero mini taza",
+                    "cantidad": 1,
+                    "precio_unitario": 80,
+                    "subtotal": 80
+                },
+                {
+                    "id_producto": 7,
+                    "nombre": "Set de posavasos de corcho",
+                    "cantidad": 1,
+                    "precio_unitario": 120,
+                    "subtotal": 120
+                },
+                {
+                    "id_producto": 5,
+                    "nombre": "Vaso reutilizable con tapa",
+                    "cantidad": 1,
+                    "precio_unitario": 100,
+                    "subtotal": 100
+                },
+                {
+                    "id_producto": 4,
+                    "nombre": "Peluche osito barista",
+                    "cantidad": 1,
+                    "precio_unitario": 280,
+                    "subtotal": 280
+                }
+            ],
+            "total": 580
+        },
+        {
+            "id": 4,
+            "fecha": "2026-11-04T06:56:54+01:00",
+            "items": [
+                {
+                    "id_producto": 2,
+                    "nombre": "Café Chiapas en grano · 250 g",
+                    "cantidad": 1,
+                    "precio_unitario": 225,
+                    "subtotal": 225
+                }
+            ],
+            "total": 225
+        },
+        {
+            "id": 5,
+            "fecha": "2026-11-04T06:56:58+01:00",
+            "items": [
+                {
+                    "id_producto": 1,
+                    "nombre": "Taza de cerámica crema",
+                    "cantidad": 1,
+                    "precio_unitario": 150,
+                    "subtotal": 150
+                }
+            ],
+            "total": 150
+        },
+        {
+            "id": 6,
+            "fecha": "2026-11-04T06:57:04+01:00",
+            "items": [
+                {
+                    "id_producto": 3,
+                    "nombre": "Termo acero inoxidable",
+                    "cantidad": 1,
+                    "precio_unitario": 250,
+                    "subtotal": 250
+                },
+                {
+                    "id_producto": 4,
+                    "nombre": "Peluche osito barista",
+                    "cantidad": 1,
+                    "precio_unitario": 280,
+                    "subtotal": 280
+                },
+                {
+                    "id_producto": 6,
+                    "nombre": "Café Veracruz molido · 500 g",
+                    "cantidad": 1,
+                    "precio_unitario": 315,
+                    "subtotal": 315
+                }
+            ],
+            "total": 845
+        }
+    ]
+}
