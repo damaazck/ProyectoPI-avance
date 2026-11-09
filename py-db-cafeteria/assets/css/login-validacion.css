@@ -1,0 +1,30 @@
+/* Complementa estilo.css sin reemplazarlo */
+.login-tarjeta .alerta-login {
+    margin: 15px 0;
+    padding: 12px 14px;
+    color: #8c2e2b;
+    background: #fff7f6;
+    border: 1px solid #eac9c7;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.login-tarjeta input.input-error {
+    border-color: #8c2e2b;
+    background-color: #fffafa;
+}
+.login-tarjeta .mensaje-campo {
+    display: block;
+    color: #8c2e2b;
+    font-size: 13px;
+    margin: -5px 0 12px;
+}
+.login-tarjeta .texto-demo {
+    margin: 12px 0;
+    text-align: center;
+}
+.login-tarjeta .btn-visitante {
+    background-color: #4C8D60;
+    color: #fff;
+    width: 100%;
+}
+.login-tarjeta .btn-visitante:hover { background-color: #426938; }
