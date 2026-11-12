@@ -4,7 +4,6 @@ require '../includes/permisos.php';
 verificarRol([ADMIN, GERENTE, SUBGERENTE, EMPLEADO]);
 require '../config/conexion.php';
 
-// Solo permite modificar órdenes registradas y activas.
 $idOrden = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT, [
     'options' => ['min_range' => 1]
 ]);
@@ -36,7 +35,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         try {
             $conexion->beginTransaction();
 
-            // Evita modificar una orden que se finalizó mientras se enviaba el formulario.
             $stmt = $conexion->prepare(
                 'SELECT estado FROM ordenes WHERE id_orden = ? FOR UPDATE'
             );
@@ -50,7 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 throw new DomainException('Esta orden ya fue finalizada. No admite nuevos productos.');
             }
 
-            // El precio se consulta en la base de datos, nunca del formulario.
             $stmt = $conexion->prepare(
                 "SELECT id_producto, precio FROM producto WHERE id_producto = ? AND estado = 'Disponible'"
             );
@@ -67,7 +64,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             );
             $stmt->execute([$idOrden, $productoId, $cantidad, $subtotal]);
 
-            // El total se actualiza dentro de la misma transacción.
             $stmt = $conexion->prepare('UPDATE ordenes SET total = total + ? WHERE id_orden = ?');
             $stmt->execute([$subtotal, $idOrden]);
 
