@@ -1,6 +1,3 @@
-/* MERCANCÍA · Los datos NO están escritos en HTML.
-   Este JavaScript consume la API local (mercancia/api.php) que lee y escribe
-   mercancia/data/inventario.json. Ventas y existencias se validan en PHP. */
 (() => {
     'use strict';
     const API = 'api.php';
@@ -56,7 +53,6 @@
             $('statExistencias').textContent = productos.reduce((total,p) => total + p.cantidad, 0);
             $('statVentas').textContent = data.totalVentas ?? 0;
             $('estadoMercancia').hidden = true;
-            // Se respetan cambios en existencias hechos desde otra pestaña.
             for (const [id,cantidad] of carrito) {
                 const p = productos.find(p => p.id === id);
                 if (!p || p.cantidad === 0) carrito.delete(id);
