@@ -1,5 +1,4 @@
 <?php
-// Módulo público de demostración: sin login, ventas y edición de inventario de prueba.
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
