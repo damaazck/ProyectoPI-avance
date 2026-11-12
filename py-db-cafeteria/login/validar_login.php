@@ -10,7 +10,6 @@ $correo = trim((string) ($_POST['correo'] ?? ''));
 $contrasena = (string) ($_POST['contrasena'] ?? '');
 $errores = [];
 
-// Errores específicos de los campos.
 if ($correo === '') {
     $errores['correo'] = 'Escribe tu correo electrónico.';
 } elseif (!filter_var($correo, FILTER_VALIDATE_EMAIL)) {
@@ -50,8 +49,6 @@ try {
     volverAlLogin(['general' => 'No se pudo validar el acceso. Intenta nuevamente.'], $correo);
 }
 
-// El sistema actual almacena contraseñas en texto plano.
-// Se mantiene su verificación para no romper los usuarios existentes.
 if (!$usuario || !hash_equals((string) $usuario['contrasena'], $contrasena)) {
     volverAlLogin(['general' => 'Correo o contraseña incorrectos, o cuenta inactiva.'], $correo);
 }
