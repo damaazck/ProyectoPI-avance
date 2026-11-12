@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-// Cuenta demostración
 $correoDemo = 'visitante@cafeteria.com';
 
 $sql = "SELECT u.id_usuario, u.nombre, u.correo,
