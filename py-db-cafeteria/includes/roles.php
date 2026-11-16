@@ -1,5 +1,5 @@
 <?php
 define('ADMIN', 1);
-define('GERENTE', 2);
+define('GERENTE', 4);
 define('SUBGERENTE', 3);
-define('EMPLEADO', 4);
+define('EMPLEADO', 2);
