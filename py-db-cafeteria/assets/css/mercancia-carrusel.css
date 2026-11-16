@@ -66,8 +66,6 @@
     border-color: #2C2826;
 }
 
-/* Una sola tarjeta por vista en todas las pantallas.
-   Anula el grid anterior, incluso en las reglas responsive de estiloou.css. */
 .pagina-mercancia .merch-carrusel-pista {
     position: relative;
     display: flex;
@@ -93,7 +91,7 @@
     scroll-snap-stop: normal;
 }
 
-/* El carrito y Últimas ventas se desplazan sin superponerse. */
+
 .pagina-mercancia .merch-carrito {
     position: static;
 }
