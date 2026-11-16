@@ -1,5 +1,5 @@
 <?php
-// Página pública: no solicita la ubicación del visitante.
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
