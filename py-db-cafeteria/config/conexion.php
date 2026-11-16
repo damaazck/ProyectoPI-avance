@@ -1,9 +1,9 @@
 <?php
 
-$host = "sql212.infinityfree.com";
-$db = "if0_42714501_py_cafeteria";
-$user = "if0_42714501";
-$pass = "6WNfBEF0GanALR";
+$host = "";
+$db = "";
+$user = "";
+$pass = "";
 
 try {
 
